@@ -13,11 +13,12 @@ body {
    --nav-h: 64px;
    --primary-font: Syne, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
    --secondary-font: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+   --primary-color: #ffffffdd;
 }
 
 body {
    font-family: var(--secondary-font);
-   color: #fff;
+   color: var(--primary-color);
    background: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)),
       url("../images/bkgr3.png");
    background-position: top center;
@@ -64,7 +65,7 @@ h2 {
 }
 
 .border-white {
-   border: 2px solid #fff !important;
+   border: 2px solid var(--primary-color) !important;
 }
 
 .socials {
@@ -83,12 +84,23 @@ h2 {
    place-items: center;
    width: 28px;
    height: 28px;
-   color: #fff;
+   color: var(--primary-color);
    text-decoration: none;
 }
 
 .socials a:hover {
-   color: #f1f1f1;
+   color: var(--primary-color);
+}
+
+.about,
+.work,
+.contact {
+   font-family: var(--secondary-font), sans-serif;
+   font-weight: 400;
+   line-height: 1.35;
+   margin-top: 40px;
+   font-size: clamp(12px, 1.4vw, 18px);
+   color: var(--primary-color);
 }
 
 @supports not (height: 100svh) {
