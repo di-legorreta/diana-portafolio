@@ -104,6 +104,12 @@ h2 {
    color: var(--primary-color);
 }
 
+.carousel-images {
+   text-decoration: none;
+   margin-top: 40px;
+   color: #4f062d;
+}
+
 @supports not (height: 100svh) {
    .hero {
       min-block-size: calc(100vh - var(--nav-h));
@@ -131,10 +137,18 @@ h2 {
       text-align: center;
       margin-top: 0.25rem;
    }
+   .carousel-images {
+      font-size: 60px;
+      color: transparent;
+   }
 }
 
 @media (max-width: 575.98px) {
    .hero {
       padding-top: 56px;
+   }
+   .carousel-images {
+      font-size: 40px;
+      color: transparent;
    }
 }
