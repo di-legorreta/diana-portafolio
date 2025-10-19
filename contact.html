@@ -77,6 +77,14 @@
                         WORK
                      </a>
                   </li>
+                  <li>
+                     <a
+                        class="nav-link btn btn-sm btn-outline-light me-4 nav-link text-white border-white"
+                        href="/contact.html"
+                     >
+                        REACH
+                     </a>
+                  </li>
                </ul>
             </div>
          </div>
@@ -88,13 +96,77 @@
                   <h1 class="mb-0">REACH<wbr /> OUT</h1>
                </div>
             </div>
-            <div class="row gy-3 align-items-end">
+            <div class="row gy-3 align-items-end contact">
                <div class="col-12 col-lg-12 text-lg-end">
-                  <h2 class="mb-0">Looking forward to hearing from you.</h2>
+                  <form class="needs-validation submit-form" novalidate>
+                     <div class="row g-3">
+                        <!-- Name -->
+                        <div class="col-12">
+                           <div class="form-floating">
+                              <input
+                                 type="text"
+                                 class="form-control"
+                                 id="name"
+                                 placeholder="Your name"
+                                 required
+                              />
+                              <label for="name">Name</label>
+                              <div class="invalid-feedback">
+                                 Please enter your name.
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col-12">
+                           <div class="form-floating">
+                              <input
+                                 type="email"
+                                 class="form-control"
+                                 id="email"
+                                 placeholder="name@example.com"
+                                 required
+                              />
+                              <label for="email">Email</label>
+                              <div class="invalid-feedback">
+                                 Please enter a valid email.
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="col-12">
+                           <div class="form-floating">
+                              <textarea
+                                 class="form-control"
+                                 placeholder="Your message"
+                                 id="message"
+                                 style="height: 160px"
+                                 required
+                              ></textarea>
+                              <label for="message">Message</label>
+                              <div class="invalid-feedback">
+                                 Please write a message.
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- Submit -->
+                        <div class="col-12">
+                           <button
+                              class="btn btn-outline-light text-white border-white"
+                              type="submit"
+                           >
+                              SEND
+                           </button>
+                        </div>
+                     </div>
+                  </form>
                </div>
             </div>
          </div>
       </section>
+
       <aside class="socials" aria-label="social links">
          <a href="https://instagram.com/" aria-label="Instagram">
             <i class="fa-brands fa-instagram" aria-hidden="true"></i>
@@ -102,8 +174,8 @@
          <a href="https://linkedin.com/" aria-label="LinkedIn">
             <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
          </a>
-         <a href="mailto:diaurum@gmail.com" aria-label="Email">
-            <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+         <a href="https://github.com/di-legorreta" aria-label="Email">
+            <i class="fa-brands fa-square-github"></i>
          </a>
       </aside>
    </body>
