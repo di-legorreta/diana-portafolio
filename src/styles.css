@@ -161,7 +161,7 @@ a:hover {
 }
 
 .reach-out {
-   display: flex;
+   display: block;
    gap: 0.75rem;
    align-items: baseline;
    flex-wrap: wrap;
