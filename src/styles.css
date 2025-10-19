@@ -14,16 +14,26 @@ body {
    --primary-font: Syne, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
    --secondary-font: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
    --primary-color: #ffffffdd;
+   --bg-1: #0e0a12;
+   --bg-2: #241635;
+   --bg-3: #742a5a;
+   --text: #fff7fb;
+   --muted: #e9d2e2;
+   --accent: #ffb4d3;
+   --glass: rgba(255, 208, 236, 0.08);
+   --glass-strong: rgba(255, 208, 236, 0.18);
 }
 
 body {
    font-family: var(--secondary-font);
    color: var(--primary-color);
-   background: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)),
-      url("../images/bkgr3.png");
-   background-position: top center;
-   background-size: cover;
-   background-repeat: no-repeat;
+   background: radial-gradient(
+         1100px 800px at 18% 18%,
+         var(--bg-2),
+         transparent 60%
+      ),
+      radial-gradient(950px 700px at 86% 28%, var(--bg-3), transparent 55%),
+      var(--bg-1);
 }
 
 h1 {
@@ -116,19 +126,6 @@ h2 {
    color: var(--bg-3);
 }
 
-@supports not (height: 100svh) {
-   .hero {
-      min-block-size: calc(100vh - var(--nav-h));
-   }
-}
-
-@media (max-width: 767.98px) {
-   body {
-      background: linear-gradient(rgba(0, 0, 0, 0.256), rgba(0, 0, 0, 0.256)),
-         url("../images/bkgr3.png") top center / cover no-repeat;
-   }
-}
-
 @media (min-width: 992px) {
    .hero-box h2 {
       text-align: right;
@@ -138,8 +135,6 @@ h2 {
 @media (max-width: 991.98px) {
    .hero-box {
       padding: 16px 18px;
-   }
-   .hero-box {
       text-align: center;
       margin-top: 0.25rem;
    }
@@ -166,25 +161,6 @@ h2 {
    }
 }
 
-:root {
-   --bg-1: #0e0a12;
-   --bg-2: #241635;
-   --bg-3: #742a5a;
-   --text: #fff7fb;
-   --muted: #e9d2e2;
-   --accent: #ffb4d3;
-   --glass: rgba(255, 208, 236, 0.08);
-   --glass-strong: rgba(255, 208, 236, 0.18);
-}
-body {
-   background: radial-gradient(
-         1100px 800px at 18% 18%,
-         var(--bg-2),
-         transparent 60%
-      ),
-      radial-gradient(950px 700px at 86% 28%, var(--bg-3), transparent 55%),
-      var(--bg-1);
-}
 h1,
 h2 {
    color: var(--text);
