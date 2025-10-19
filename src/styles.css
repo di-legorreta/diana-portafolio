@@ -141,18 +141,23 @@ a:hover {
    color: var(--bg-3);
 }
 
-.mp-box,
-.project-card {
-   background: var(--glass);
-   backdrop-filter: blur(6px);
-   border: 1px solid var(--glass-strong);
-   border-radius: 12px;
-}
-
 .btn-outline-light:hover {
    background: var(--accent);
    color: #2a0f22;
    border-color: var(--accent);
+}
+
+.site-nav .btn {
+   padding: 0.45rem 0.9rem;
+   line-height: 1.1;
+   border-radius: 10px;
+}
+
+.btn {
+   font-size: 0.7rem;
+   padding: 0.45rem 0.9rem;
+   line-height: 1.1;
+   border-radius: 10px;
 }
 
 @media (min-width: 992px) {
