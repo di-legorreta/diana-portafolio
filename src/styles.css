@@ -11,6 +11,7 @@ body {
 
 :root {
    --nav-h: 64px;
+   --nav-safe: 260px;
    --primary-font: Syne, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
    --secondary-font: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
    --primary-color: #ffffffdd;
@@ -20,8 +21,6 @@ body {
    --text: #fff7fb;
    --muted: #e9d2e2;
    --accent: #ffb4d3;
-   --glass: rgba(255, 208, 236, 0.08);
-   --glass-strong: rgba(255, 208, 236, 0.18);
 }
 
 body {
@@ -168,6 +167,9 @@ a:hover {
 }
 
 @media (min-width: 992px) {
+   .hero h1 {
+      max-width: calc(100% - var(--nav-safe));
+   }
    .hero-box h2 {
       text-align: right;
    }
