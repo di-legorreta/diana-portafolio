@@ -206,4 +206,11 @@ a:hover {
    .list {
       list-style-type: none;
    }
+
+   .site-nav {
+      left: 50%;
+      right: auto;
+      top: 20px;
+      transform: translateX(-50%);
+   }
 }
