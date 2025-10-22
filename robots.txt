@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://diana-legorreta-portafolio.pages.dev/sitemap.xml
